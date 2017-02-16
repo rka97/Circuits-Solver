@@ -1,6 +1,6 @@
 #include "IO.h"
 
-// workaround for MINGW
+// workaround for MINGW's absence of to_string
 #ifdef __MINGW32__
 #include <sstream>
 template <typename T>

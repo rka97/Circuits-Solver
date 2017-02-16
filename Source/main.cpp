@@ -1,19 +1,9 @@
 #include "IO.h"
 #include <iostream>
 #include "Circuit.h"
-#define _WIN32_WINNT 0x0502
-#include<windows.h>
 using namespace std;
 
 int main() {
-    HANDLE buff = GetStdHandle(STD_OUTPUT_HANDLE);
-    COORD sizeOfBuff;
-    sizeOfBuff.X=150;
-    sizeOfBuff.Y=100;
-    SetConsoleScreenBufferSize(buff,sizeOfBuff);
-    HWND hwnd = GetConsoleWindow();
-    if( hwnd != NULL ){ MoveWindow(hwnd ,0,0,1000,500,TRUE); }
-
 
 	Circuit* c = new Circuit();
 
